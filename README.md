@@ -28,13 +28,6 @@ reference:
 
 Alumunium, copper and lead has an atomic radius of 121, 132, and 146 nm, respectively, an FCC crystal structure, and atomic weight of 26.98, 63.55, and 207.20 g/mol. Compute their theoritical density,and compare the answer with their measured density.
 
-__Face centered cubic (fcc) structure__
-
-[![App Platform](https://www.nde-ed.org/Physics/Materials/Structure/metallic_structures.xhtml](https://www.nde-ed.org/Physics/Materials/Structure/metallic_structures.xhtml)
-)
-
-_Credit: Callister & Rethwisch_
-
 in the FCC unit cell illustrated, the atoms touch one another across a face-diagonal, the length of which is _4R_. Because the unit cell is a cube, its volume is $a^{3}$, where _a_ is the cell edge length. From the right triangle on the face.
 
 $a^{2} + a^{2} = (4R)^{2}$
@@ -57,7 +50,7 @@ $V_{C}=a^{3}=(2\sqrt{2})^{3}=16R^{3}\sqrt{2}$
 | <       |          Less than           |
 | >=      |   Greater than or equal to   |
 | <=      |    Less than or equal to     |
-|:--------|------------------------------|
+|:--------|-----------------------------:|
 
 ## P3.7
 Determine whether each of the following electron configuration is an inert gas,a halogen, an alkali metal, an alkaline earth metal, or transition metal. Justify your choices.
