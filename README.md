@@ -1,16 +1,91 @@
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/dindagustiayu/-String-list-and-loops-and-Flow-Control-in-Python-for-Chemistry-Exercises/tree/main)
+
 # Strings, List and Loops, and Comparison and Flow Control in Python for Chemistry Exercises.
-# Key Equation
+## Key Equation
 - Density Computations
   - $\rho=\frac{m}{v}=\frac{nA}{V_{C}N_{A}}$
 - Avogadro's number
   - 6.022 x $10^{23}$, 1 amu/atom (or molecule) = 1 g/mol
 
-## 1. Strings
+# 1. Strings
 ## P3.1
 Produce a nicely formatted list of the values of the physical constants, _h_, _c_, $k_{B}$, _R_, and _$N_{A}$_, to four significant figures, with their units.
+```python
+h, h_units = 6.62607015e-34, 'J.s'
+c, c_units = 299792458, 'm.s-1'
+kB, kB_units = 1.380649e-23, 'J.K-1'
+R, R_units = 8.314462618, 'J.K.mol-1'
+N_A, N_A_units = 6.02214076e+23, 'mol-1'
+
+s1 = (f'h = {h:9.3e} {h_units}\t'
+     f'c = {c:9.3e} {c_units}\t' 
+      f'kB = {kB:9.3e} {kB_units}\t'
+       f'R = {R:9.3e} {R_units}\t'
+        f'N_A = {N_A:9.3e} {N_A_units}\t')
+
+s2 = (f'h   = {h:9.3e}{h_units}\n'
+      f'c   = {c:9.3e}{c_units}\n' 
+      f'kB  = {kB:9.3e}{kB_units}\n'
+      f'R   = {R:9.3e}{R_units}\n'
+      f'N_A = {N_A:9.3e}{N_A_units}\n')
+print(s1)
+
+print(s2)
+```
+```python
+h = 6.626e-34 J.s	c = 2.998e+08 m.s-1	kB = 1.381e-23 J.K-1	R = 8.314e+00 J.K.mol-1	N_A = 6.022e+23 mol-1	
+h   = 6.626e-34J.s
+c   = 2.998e+08m.s-1
+kB  = 1.381e-23J.K-1
+R   = 8.314e+00J.K.mol-1
+N_A = 6.022e+23mol-1
+```
 
 ## P3.2
 The following variables define some thermodynamic properties of $CO_{2}$ and $H_{2}O$.
+```python
+# Triple point of CO2 (K, Pa)
+T3_CO2, p3_CO2 = 216.58, 5.185e5
+# Entalphy of fusion of CO2 (kJ.mol-1).
+DfusH_CO2 = 9.019
+# Entrophy of fusion os CO2 (J.K-1.mol-1).
+DfusS_CO2 = 40
+# Entalphy of vaporization of CO2 (kJ.mol-1).
+DvapH_CO2 = 15.326
+# Entrophy of vaporization of CO2 (J.K-1.mol-1).
+DvapS_CO2 = 70.8
+
+# Triple point of H2O (K, Pa)
+T3_H2O, p3_H2O = 273.16, 611.73
+# Entalphy of fusion of H2O (kJ.mol-1).
+DfusH_H2O = 6.01
+# Entrophy of fusion of H2O (J.K-1.mol-1).
+DfusS_H2O = 22.0
+# Entalphy of vaporization of H2O (kJ.mol-1).
+DvapH_H2O = 40.68
+# Entrophy of vaporization of H2O (J.K-1.mol-1).
+DvapS_H2O = 118.89
+
+print(' '*22 + 'CO2' + ' '*9 + 'H20')
+print('_'*40)
+print('p3     /pa         ', f'{p3_CO2:5.0f}      {p3_H2O:5.2f}')
+print('T3     /K          ', f'{T3_CO2:5.2f}      {T3_H2O:5.2f}')
+print('DfusH  /kJ.mol-1   ', f'{DfusH_CO2:5.3f}       {DfusH_H2O:5.3f}')
+print('DfusS  /J.K-1.mol-1', f'{DfusS_CO2:4.1f}      {DfusS_H2O:6.1f}')
+print('DvapH  /kJ.mol-1   ', f'{DvapH_CO2:5.3f}    {DvapH_H2O:8.3f}')
+print('DvapS  /j.k-1.mol-1', f'{DvapS_CO2:5.1f}       {DvapS_H2O:5.1f}')
+
+```
+```python
+                      CO2         H20
+________________________________________
+p3     /pa          518500      611.73
+T3     /K           216.58      273.16
+DfusH  /kJ.mol-1    9.019       6.010
+DfusS  /J.K-1.mol-1 40.0        22.0
+DvapH  /kJ.mol-1    15.326      40.680
+DvapS  /j.k-1.mol-1  70.8       118.9
+```
 
 ## P3.3
 Nuclear binding energy and the mass defect. A neutron has a slightly larger mass than the proton. These are often given in terms of an atomic mass unit, where one atomic mass unit (u) is defined as 1/12th the mass of a carbon-12 atom.
